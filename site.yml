@@ -5,7 +5,9 @@
     - name: install pacman packages
       community.general.pacman:
         state: present
-        name: btop
+        name: 
+        - btop
+        - yakuake
         executable: yay
     - name: Display the config
       debug:
