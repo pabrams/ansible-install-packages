@@ -8,6 +8,7 @@
         name: 
         - btop
         - yakuake
+        - vlc
         executable: yay
     - name: Display the config
       debug:
