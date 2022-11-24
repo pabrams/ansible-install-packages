@@ -1,0 +1,12 @@
+---
+
+- hosts: localhost
+  tasks:
+    - name: install pacman packages
+      community.general.pacman:
+        state: present
+        name: btop
+        executable: yay
+    - name: Display the config
+      debug:
+        msg: "The hostname is {{ ansible_hostname }} and the OS is {{ ansible_version }}"
